@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+html {
+    background-color:hsl(330, 100%, 98%);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: var(--White);
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    width: 900px;
+}
+
+*{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 400px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--Wenge-Brown)
+}
+
+span {
+    font-weight: 700;
+}
+
+.title-container {
+    line-height: 20px;
+    padding: 12px;
+}
+
+.title-container p {
+    color: var(--Wenge-Brown);
+}
+
+.preparation-container {
+    background-color: var(--Rose-White);
+    width:850px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.preparation-container ul {
+    line-height: 40px;
+}
+
+.preparation-container li::marker {
+    color: var(--Dark-Raspberry);
+}
+
+.preparation-container h3 {
+    color: var(--Dark-Raspberry);
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.ingredients-container h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--Nutmeg);
+    margin-left: 1rem;
+}
+
+.ingredients-container li {
+    color: var(--Wenge-Brown);
+    line-height: 40px;
+    font-size: 1rem;
+
+}
+
+.ingredients-container li::marker {
+    color: var(--Nutmeg);
+}
+
+.instructions-container h2 {
+    color: var(--Nutmeg);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1.2rem;
+}
+
+.instructions-container li {
+    line-height: 40px;
+    color: var(--Wenge-Brown);
+    font-size: 1rem;
+}
+
+.instructions-container li::marker {
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+.nutrition-container h2 {
+    color: var(--Nutmeg);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1.2rem;
+}
+
+.nutrition-container p {
+    margin-left: 1.2rem;
+}
+
+.p1 {
+    display: flex;
+}
+.p2 {
+    display: flex;
+}
+.p3 {
+    display: flex;
+}
+.p4 {
+    display: flex;
+}
+
+#kcal {
+    margin-left: 20rem;
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+#g {
+    margin-left: 22rem;
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+#g2 {
+    margin-left: 21.2rem;
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+#g3 {
+    margin-left: 22.9rem;
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+.nutrition-container p {
+    color: var(--Wenge-Brown);
+    font-size: 1rem;
+}
+
+hr {
+    border-color: var(--Light-Grey)
+}
+
+/* md */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 450px;
+    }
+
+    img {
+        width: 430px;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+        object-fit:cover
+    }
+
+    .title-container {
+        text-align: center;
+    }
+
+    .preparation-container {
+        width: 400px;
+        text-align: center;
+    }
+
+    #kcal {
+        margin-left: 19rem;
+        color: var(--Nutmeg);
+        font-weight: 700;
+
+    }
+    
+}
+
+
+
